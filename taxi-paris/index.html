@@ -1,0 +1,310 @@
+<!DOCTYPE html><!-- Déclare le type de document HTML5 -->
+<html lang="fr"><!-- Balise racine HTML, langue définie en français -->
+<head><!-- En-tête de la page (non visible par l'utilisateur) -->
+<meta charset="UTF-8"><!-- Définit l'encodage des caractères en UTF-8 (supporte les accents, etc.) -->
+<meta name="viewport" content="width=device-width,initial-scale=1"><!-- Rend la page responsive sur mobile -->
+<title>Taxi &amp; Moto-taxi Paris IDF — Taxi · Paris</title><!-- Titre de l'onglet du navigateur, avec le nom du chauffeur sécurisé contre les injections HTML -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><!-- Pré-connecte au serveur Google Fonts pour accélérer le chargement -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><!-- Charge les polices Cormorant Garamond et Inter depuis Google Fonts -->
+<link rel="stylesheet" href="style.css"><!-- Lie la feuille de style CSS externe -->
+</head>
+<body><!-- Début du corps de la page visible par l'utilisateur -->
+
+<!-- NAV : Barre de navigation fixe en haut de page -->
+<nav class="nav" id="nav"><!-- Conteneur de la barre de navigation, avec id pour le JS -->
+  <a href="#" class="nav-brand"><!-- Lien logo/marque qui ramène en haut de page -->
+    <div class="nav-monogram">TP</div><!-- Affiche les initiales du chauffeur (ex: HM) -->
+    <div><!-- Conteneur pour le nom et le slogan -->
+      <div class="nav-name">Taxi &amp; Moto-taxi Paris IDF</div><!-- Affiche le nom complet du chauffeur, sécurisé -->
+      <div class="nav-tagline">Taxi · Moto-taxi · Médical</div><!-- Sous-titre des services proposés -->
+    </div>
+  </a>
+  <div class="nav-menu"><!-- Conteneur des liens du menu de navigation -->
+    <a href="#services">Services</a><!-- Lien ancre vers la section Services -->
+    <a href="#tarifs">Tarifs</a><!-- Lien ancre vers la section Tarifs -->
+    <a href="#contact">Contact</a><!-- Lien ancre vers la section Contact -->
+    <a href="tel:0650877628" class="nav-cta"><!-- Bouton d'appel direct (numéro sans espaces) -->
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><!-- Icône SVG d'un téléphone -->
+      Appeler<!-- Texte du bouton d'appel -->
+    </a>
+  </div>
+</nav>
+
+<!-- HERO : Section principale d'accueil avec image de fond et présentation -->
+<section class="hero"><!-- Conteneur de la section hero -->
+  <div class="hero-bg"><!-- Conteneur de l'arrière-plan visuel du hero -->
+    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=85&auto=format&fit=crop" alt="Paris by night" loading="eager"><!-- Image de fond Paris, chargée en priorité (eager) -->
+    <div class="hero-overlay"></div><!-- Premier calque semi-transparent pour assombrir l'image -->
+    <div class="hero-overlay2"></div><!-- Second calque pour renforcer le contraste avec le texte -->
+  </div>
+  <div class="hero-content"><!-- Conteneur du contenu texte et carte du hero -->
+    <div class="hero-left"><!-- Colonne gauche : titre et bouton d'appel -->
+      <div class="hero-eyebrow"><!-- Ligne de texte courte au-dessus du titre principal -->
+        <span class="hero-eyebrow-line"></span><!-- Ligne décorative horizontale -->
+        Chauffeur privé · Paris &amp; Île-de-France<!-- Texte "Chauffeur privé · Paris & Île-de-France" -->
+      </div>
+      <h1>Votre chauffeur<br>parisien.</h1><!-- Titre principal de la page -->
+      <p class="hero-desc">Taxi confort, moto-taxi express ou transport médical. Disponible 24h/24 · 7j/7, un seul numéro.</p><!-- Description courte des services avec les horaires -->
+      <div class="hero-actions"><!-- Conteneur des boutons d'action -->
+        <a href="tel:0650877628" class="btn-primary"><!-- Gros bouton d'appel principal -->
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><!-- Icône SVG téléphone dans le bouton -->
+          06 50 87 76 28<!-- Affiche le numéro de téléphone formaté -->
+        </a>
+      </div>
+    </div>
+    <div class="hero-right"><!-- Colonne droite : carte de présentation du chauffeur -->
+      <div class="hero-card"><!-- Carte flottante avec infos du chauffeur -->
+        <div class="hero-card-label">Votre chauffeur</div><!-- Étiquette au-dessus du nom -->
+        <div class="hero-card-name">Taxi &amp; Moto-taxi Paris IDF</div><!-- Nom du chauffeur dans la carte -->
+        <div class="hero-card-role">Licencié</div><!-- Statut du chauffeur -->
+        <div class="hero-card-sep"></div><!-- Séparateur horizontal décoratif -->
+        <div class="hero-card-tel-lbl">Réservation directe</div><!-- Libellé au-dessus du numéro -->
+        <a href="tel:0650877628" class="hero-card-tel">06 50 87 76 28</a><!-- Numéro cliquable dans la carte -->
+        <div class="hero-card-dispo">24h/24 · 7j/7</div><!-- Affiche les horaires de disponibilité -->
+        <div class="hero-chips"><!-- Conteneur des badges de services -->
+          <span class="hchip">Taxi</span><!-- Badge "Taxi" -->
+          <span class="hchip">Moto-taxi</span><!-- Badge "Moto-taxi" -->
+          <span class="hchip">Médical</span><!-- Badge "Médical" -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><!-- Indicateur animé d'invitation à défiler vers le bas -->
+    <span>Défiler</span><!-- Texte "Défiler" -->
+    <div class="scroll-line"></div><!-- Ligne animée sous le texte -->
+  </div>
+</section>
+
+<!-- MARQUEE : Bandeau défilant affichant les points clés du service -->
+<div class="marquee"><!-- Conteneur du bandeau défilant -->
+  <div class="marquee-track"><!-- Piste d'animation du défilement -->
+    <span class="m-item"><span class="dot"></span>Taxi classique</span><span class="m-item"><span class="dot"></span>Moto-taxi express</span><span class="m-item"><span class="dot"></span>Transport médical VSL</span><span class="m-item"><span class="dot"></span>CDG · Orly · Gare du Nord</span><span class="m-item"><span class="dot"></span>Paris &amp; Île-de-France</span><span class="m-item"><span class="dot"></span>24h/24 · 7j/7</span><span class="m-item"><span class="dot"></span>CB · Espèces · Virement</span><span class="m-item"><span class="dot"></span>Reçu professionnel</span><span class="m-item"><span class="dot"></span>Disponible immédiatement</span><span class="m-item"><span class="dot"></span>Climatisé · Confort</span><span class="m-item"><span class="dot"></span>Licence taxi</span><span class="m-item"><span class="dot"></span>Taxi classique</span><span class="m-item"><span class="dot"></span>Moto-taxi express</span><span class="m-item"><span class="dot"></span>Transport médical VSL</span><span class="m-item"><span class="dot"></span>CDG · Orly · Gare du Nord</span><span class="m-item"><span class="dot"></span>Paris &amp; Île-de-France</span><span class="m-item"><span class="dot"></span>24h/24 · 7j/7</span><span class="m-item"><span class="dot"></span>CB · Espèces · Virement</span><span class="m-item"><span class="dot"></span>Reçu professionnel</span><span class="m-item"><span class="dot"></span>Disponible immédiatement</span><span class="m-item"><span class="dot"></span>Climatisé · Confort</span><span class="m-item"><span class="dot"></span>Licence taxi</span>  </div>
+</div>
+
+<!-- SERVICES : Section des 3 types de services proposés -->
+<section class="services" id="services"><!-- Section services avec ancre pour la navigation -->
+  <div class="rv"><div class="section-label">Prestations</div></div><!-- Étiquette de section avec animation reveal -->
+  <h2 class="section-title rv d1">Trois services,<br>une seule excellence.</h2><!-- Titre de section, animé avec délai d1 -->
+  <p class="section-sub rv d2">Taxi classique, moto-taxi express ou transport médical — disponible 24h/24 · 7j/7.</p><!-- Sous-titre de la section avec les horaires -->
+  <div class="svc-grid"><!-- Grille CSS des 3 cartes de service -->
+
+    <!-- Service 1 : Taxi classique -->
+    <div class="svc rv d2"><!-- Carte service avec animation reveal, délai d2 -->
+      <div class="svc-body"><!-- Corps de la carte -->
+      <div class="svc-n">01</div><!-- Numéro du service -->
+      <div class="svc-ico ico-w"><svg viewBox="0 0 24 24"><path d="M17 9H15L13 4H7L5 9H3C2 9 1 10 1 11V15H3C3 16.1 3.9 17 5 17S7 16.1 7 15H13C13 16.1 13.9 17 15 17S17 16.1 17 15H19V11C19 10 18 9 17 9ZM5 15.5A.5.5 0 115 14.5.5.5 0 015 15.5ZM8.5 9L10 5H12.5L14 9H8.5ZM15 15.5A.5.5 0 1115 14.5.5.5 0 0115 15.5Z"/></svg></div><!-- Icône SVG d'une voiture de taxi -->
+      <div class="svc-cat cat-w">Taxi classique</div><!-- Catégorie du service -->
+      <div class="svc-title">Voiture &<br>confort</div><!-- Titre court du service -->
+      <p class="svc-desc">SUV spacieux et climatisé pour tous vos déplacements. Aéroports, gares, rendez-vous professionnels ou sorties.</p><!-- Description du service taxi -->
+      <ul class="svc-list sl-w"><li>Paris & toute l'Île-de-France</li><li>CDG, Orly, toutes gares parisiennes</li><li>Longue distance sur devis</li><li>Reçu pour notes de frais</li></ul><!-- Liste des points forts du service taxi -->
+      <a href="tel:0650877628" class="svc-link lk-w">Réserver<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><!-- Lien d'appel avec flèche SVG -->
+      </div>
+    </div>
+
+    <!-- Service 2 : Moto-taxi express -->
+    <div class="svc rv d3"><!-- Carte service avec animation reveal, délai d3 -->
+      <div class="svc-body"><!-- Corps de la carte -->
+      <div class="svc-n">02</div><!-- Numéro du service -->
+      <div class="svc-ico ico-g"><svg viewBox="0 0 24 24"><path d="M19 7c0-1.1-.9-2-2-2h-3L12 2H5C3.9 2 3 2.9 3 4v12h2c0 1.1.9 2 2 2s2-.9 2-2h6c0 1.1.9 2 2 2s2-.9 2-2h2v-4l-2-3zM7 17c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm10 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-5H5V4h6.5l2 3H16v5z"/></svg></div><!-- Icône SVG d'une moto -->
+      <div class="svc-cat cat-g">Moto-taxi express</div><!-- Catégorie du service moto -->
+      <div class="svc-title">Moto &<br>rapidité</div><!-- Titre court du service moto -->
+      <p class="svc-desc">Traversez Paris en un éclair. Idéal pour les urgences et les heures de pointe. Casque homologué fourni sur place.</p><!-- Description du service moto-taxi -->
+      <ul class="svc-list sl-g"><li>Urgences & heures de pointe</li><li>Casque et équipement fournis</li><li>Disponible en quelques minutes</li><li>Tarif à la course</li></ul><!-- Liste des avantages du moto-taxi -->
+      <a href="tel:0650877628" class="svc-link lk-g">Réserver<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><!-- Lien d'appel avec flèche SVG -->
+      </div>
+    </div>
+
+    <!-- Service 3 : Transport médical VSL -->
+    <div class="svc rv d4"><!-- Carte service avec animation reveal, délai d4 -->
+      <div class="svc-body"><!-- Corps de la carte -->
+      <div class="svc-n">03</div><!-- Numéro du service -->
+      <div class="svc-ico ico-b"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z" fill="#60a5fa"/></svg></div><!-- Icône SVG croix médicale (bleue) -->
+      <div class="svc-cat cat-b">Transport médical</div><!-- Catégorie du service médical -->
+      <div class="svc-title">VSL &<br>médical</div><!-- Titre court du service médical -->
+      <p class="svc-desc">Véhicule spacieux et confortable pour vos rendez-vous médicaux, dialyse, hospitalisations. Patient et discret.</p><!-- Description du service médical -->
+      <ul class="svc-list sl-b"><li>Tous hôpitaux & cliniques Paris</li><li>Dialyse & soins réguliers</li><li>Prise en charge mutuelle</li><li>À votre rythme, sans stress</li></ul><!-- Liste des cas couverts par le transport médical -->
+      <a href="tel:0650877628" class="svc-link lk-b">Réserver<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><!-- Lien d'appel avec flèche SVG -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS : Bandeau de statistiques clés -->
+<div class="stats"><!-- Conteneur des 2 statistiques -->
+  <div class="stat rv d1"><div class="stat-n">3</div><div class="stat-l">Services disponibles</div></div><!-- Stat 1 : nombre de services (valeur fixe : 3) -->
+  <div class="stat rv d2"><div class="stat-n">24/7</div><div class="stat-l">Disponibilité</div></div><!-- Stat 2 : disponibilité 24h/24 7j/7 -->
+</div>
+
+<!-- TARIFS : Section de tarification -->
+<section class="tarifs" id="tarifs"><!-- Section tarifs avec ancre pour la navigation -->
+  <div class="rv"><div class="section-label">Tarification</div></div><!-- Étiquette de section avec animation reveal -->
+  <h2 class="section-title rv d1">Tarifs au compteur.</h2><!-- Titre de la section tarifs -->
+  <p class="section-sub rv d2">Tous les trajets sont facturés au compteur homologué — pas de surprise, pas de prix fixé à l'avance. Vous payez exactement ce qui s'affiche.</p><!-- Description du système de tarification -->
+
+  <div class="tarif-grid rv d3"><!-- Grille de 3 cartes tarifaires avec animation reveal -->
+
+    <!-- Carte tarif 1 : Prise en charge -->
+    <div class="tarif-card"><!-- Carte de tarif standard -->
+      <div class="tarif-header"><!-- En-tête de la carte tarif -->
+        <div class="tarif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><!-- Icône SVG d'une horloge -->
+        <div><!-- Conteneur texte -->
+          <div class="tarif-label">Prise en charge</div><!-- Étiquette de la carte -->
+          <div class="tarif-name">Tarif de départ</div><!-- Nom du tarif -->
+        </div>
+      </div>
+      <p class="tarif-desc">Dès la montée dans le véhicule, le compteur démarre. Le tarif de prise en charge est fixé par arrêté préfectoral.</p><!-- Explication du fonctionnement du tarif de départ -->
+    </div>
+
+    <!-- Carte tarif 2 : Mise en avant (dorée) -->
+    <div class="tarif-card tarif-card--gold"><!-- Carte tarifaire principale, mise en valeur avec style doré -->
+      <div class="tarif-header"><!-- En-tête de la carte tarifaire principale -->
+        <div class="tarif-icon tarif-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><!-- Icône SVG de calques/stacks dorée -->
+        <div><!-- Conteneur texte -->
+          <div class="tarif-label" style="color:var(--gold)">Tarification</div><!-- Étiquette en couleur dorée -->
+          <div class="tarif-name">100% au compteur</div><!-- Nom du tarif principal -->
+        </div>
+      </div>
+      <p class="tarif-desc">Le prix est calculé en temps réel selon la distance parcourue et le temps de trajet. Aucun supplément caché.</p><!-- Description transparente du calcul tarifaire -->
+    </div>
+
+    <!-- Carte tarif 3 : Paiement -->
+    <div class="tarif-card"><!-- Carte de tarif standard -->
+      <div class="tarif-header"><!-- En-tête de la carte paiement -->
+        <div class="tarif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><!-- Icône SVG d'une carte bancaire -->
+        <div><!-- Conteneur texte -->
+          <div class="tarif-label">Paiement</div><!-- Étiquette de la carte paiement -->
+          <div class="tarif-name">CB · Espèces · Virement</div><!-- Moyens de paiement acceptés -->
+        </div>
+      </div>
+      <p class="tarif-desc">Carte bancaire, espèces ou virement acceptés. Un reçu vous est remis à chaque course pour vos notes de frais.</p><!-- Description des modalités de paiement -->
+    </div>
+
+  </div>
+
+  <!-- TAXI CONVENTIONNÉ : Bloc d'information sur la prise en charge Sécu -->
+  <div class="conv-block rv d4"><!-- Bloc taxi conventionné avec animation reveal, délai d4 -->
+    <div class="conv-left"><!-- Colonne gauche : explication du conventionnement -->
+      <div class="section-label" style="margin-bottom:12px">Taxi conventionné</div><!-- Étiquette de sous-section -->
+      <h3 class="conv-title">Prise en charge<br>par l'Assurance Maladie.</h3><!-- Titre du bloc conventionnement -->
+      <p class="conv-desc">En tant que taxi conventionné Sécurité Sociale, je peux transporter des patients dont le trajet est prescrit par un médecin. Sous conditions, vos trajets médicaux sont remboursés totalement ou partiellement par l'Assurance Maladie et votre mutuelle.</p><!-- Explication du conventionnement Sécu -->
+      <p class="conv-desc">Une ordonnance de transport (bon de transport) suffit. Je m'occupe de tout le reste.</p><!-- Info sur le bon de transport -->
+      <a href="tel:0650877628" class="btn-conv">Renseignez-vous<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><!-- Bouton d'appel pour renseignements avec flèche -->
+    </div>
+    <div class="conv-right"><!-- Colonne droite : liste des 4 cas de prise en charge -->
+
+      <!-- Item 1 : Ordonnance médicale -->
+      <div class="conv-item"><!-- Ligne d'item avec icône et texte -->
+        <div class="conv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><!-- Icône SVG coche/check cercle -->
+        <div><!-- Conteneur texte -->
+          <div class="conv-item-title">Ordonnance médicale</div><!-- Titre de l'item -->
+          <div class="conv-item-desc">Un bon de transport prescrit par votre médecin suffit pour déclencher la prise en charge.</div><!-- Description de l'item -->
+        </div>
+      </div>
+
+      <!-- Item 2 : Remboursement Sécu -->
+      <div class="conv-item"><!-- Ligne d'item avec icône et texte -->
+        <div class="conv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v14a2 2 0 01-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg></div><!-- Icône SVG document/fichier -->
+        <div><!-- Conteneur texte -->
+          <div class="conv-item-title">Remboursement Sécu</div><!-- Titre de l'item remboursement -->
+          <div class="conv-item-desc">L'Assurance Maladie prend en charge tout ou partie du trajet selon votre situation et votre pathologie.</div><!-- Description du remboursement -->
+        </div>
+      </div>
+
+      <!-- Item 3 : Dialyse et soins réguliers -->
+      <div class="conv-item"><!-- Ligne d'item avec icône et texte -->
+        <div class="conv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><!-- Icône SVG bouclier/protection -->
+        <div><!-- Conteneur texte -->
+          <div class="conv-item-title">Dialyse & soins réguliers</div><!-- Titre de l'item dialyse -->
+          <div class="conv-item-desc">Pour les patients en traitement long (dialyse, chimiothérapie, rééducation), une série de transports peut être prescrite.</div><!-- Description des soins réguliers couverts -->
+        </div>
+      </div>
+
+      <!-- Item 4 : Hospitalisation et retour -->
+      <div class="conv-item"><!-- Ligne d'item avec icône et texte -->
+        <div class="conv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div><!-- Icône SVG maison/hôpital -->
+        <div><!-- Conteneur texte -->
+          <div class="conv-item-title">Hospitalisation & retour</div><!-- Titre de l'item hospitalisation -->
+          <div class="conv-item-desc">Entrée, sortie d'hôpital ou transfert entre établissements : le trajet est pris en charge sur prescription.</div><!-- Description du transport hospitalier -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Note légale sur la réglementation des tarifs -->
+  <div class="tarif-notice rv"><!-- Bandeau d'information légale avec animation reveal -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><!-- Icône SVG d'information (i dans un cercle) -->
+    <p>Les tarifs taxis sont réglementés par la préfecture de police de Paris. Tarifs A (diurne), B (nocturne/dimanche) et C (grande couronne) s'appliquent selon les horaires et zones.</p><!-- Explication des 3 tarifs réglementés (A, B, C) -->
+  </div>
+</section>
+
+<!-- CONTACT : Section de contact avec carte récapitulative -->
+<section class="contact" id="contact"><!-- Section contact avec ancre pour la navigation -->
+  <div class="contact-inner"><!-- Conteneur interne centré -->
+    <div class="section-label rv">Contact</div><!-- Étiquette de section avec animation reveal -->
+    <h2 class="section-title rv d1">Un appel, c'est parti.</h2><!-- Titre accrocheur de la section contact -->
+    <p class="section-sub rv d2">Taxi, moto-taxi ou transport médical — dites-moi ce qu'il vous faut.</p><!-- Sous-titre de la section contact -->
+    <div class="cbox rv d3"><!-- Carte de contact principale avec animation reveal, délai d3 -->
+      <div class="cbox-top"><!-- Partie haute de la carte : nom, numéro, disponibilité -->
+        <div class="cbox-glow"></div><!-- Effet de lueur décorative en arrière-plan -->
+        <h3>Taxi &amp; Moto-taxi Paris IDF</h3><!-- Nom du chauffeur dans la carte contact -->
+        <p>Taxi · Moto-taxi · Médical · Paris &amp; Île-de-France</p><!-- Services et zone géographique -->
+        <a href="tel:0650877628" class="big-tel">06 50 87 76 28</a><!-- Numéro de téléphone cliquable, affiché en grand -->
+        <div class="c-dispo">24h/24 · 7j/7</div><!-- Horaires de disponibilité -->
+      </div>
+      <div class="cbox-bot"><!-- Partie basse de la carte : zone, disponibilité, email -->
+        <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg></div><div class="ci-l">Zone</div><div class="ci-v">Paris & IDF</div></div><!-- Info zone : icône localisation + "Paris & IDF" -->
+        <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div class="ci-l">Disponible</div><div class="ci-v">24h/24 · 7j/7</div></div><!-- Info disponibilité : icône horloge + horaires -->
+        <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg></div><div class="ci-l">Email</div><div class="ci-v" style="font-size:.74rem">contact@jpmartin-taxi.fr</div></div><!-- Info email : icône enveloppe + adresse email -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER : Pied de page avec logo, copyright et badges -->
+<footer><!-- Balise footer de la page -->
+  <div class="f-l"><!-- Partie gauche du footer : logo initiales et nom -->
+    <div class="f-mono">TP</div><!-- Initiales du chauffeur en monogramme -->
+    <div><!-- Conteneur nom et copyright -->
+      <div class="f-name">Taxi &amp; Moto-taxi Paris IDF</div><!-- Nom complet dans le footer -->
+      <div class="f-copy">&copy; <span id="year">2026</span> · Taxi · Moto-taxi · Médical · Paris</div><!-- Copyright avec l'année courante générée automatiquement par PHP -->
+    </div>
+  </div>
+  <div class="f-pills"><!-- Partie droite du footer : badges de certification -->
+    <span class="f-pill">Licence taxi</span><!-- Badge "Licence taxi" -->
+    <span class="f-pill">Assurés</span><!-- Badge "Assurés" -->
+    <span class="f-pill">Paris IDF</span><!-- Badge "Paris IDF" -->
+  </div>
+</footer>
+
+<!-- FAB : Bouton d'appel flottant (Fixed Action Button) toujours visible -->
+<a href="tel:0650877628" class="fab" aria-label="Appeler"><!-- Lien d'appel flottant, accessible via aria-label -->
+  <div class="fab-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div><!-- Icône SVG téléphone dans le bouton flottant -->
+  <span class="fab-txt">06 50 87 76 28</span><!-- Numéro de téléphone affiché à côté de l'icône -->
+</a>
+
+<script>
+// ===== NAVBAR : Ajoute la classe "scrolled" quand l'utilisateur défile de plus de 60px =====
+window.addEventListener('scroll', () => {
+  // Bascule la classe CSS "scrolled" sur la nav selon si le scroll dépasse 60px (pour changer l'apparence)
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60)
+});
+
+// ===== SCROLL REVEAL : Anime les éléments au fur et à mesure qu'ils entrent dans le champ de vision =====
+// Crée un observateur d'intersection qui déclenche l'animation quand 10% de l'élément est visible
+const obs = new IntersectionObserver(es => {
+  // Pour chaque élément observé qui entre dans le viewport, ajoute la classe "on" pour déclencher l'animation CSS
+  es.forEach(e => { if (e.isIntersecting) e.target.classList.add('on') })
+}, { threshold: .1 }); // Seuil : l'animation se déclenche quand 10% de l'élément est visible
+
+// Applique l'observateur à tous les éléments ayant les classes rv, rl ou rr (reveal variants)
+document.querySelectorAll('.rv,.rl,.rr').forEach(el => obs.observe(el));
+
+// Année du copyright toujours à jour
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+</script>
+</body><!-- Fin du corps de la page -->
+</html><!-- Fin du document HTML -->
